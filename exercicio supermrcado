@@ -1,0 +1,34 @@
+print("         supermercado manos            ")
+print("                                       ")
+print("_______________________________________")
+print("           Gasto Medio              ")
+print("1 - de 0 a 100                       ")
+print("2 - de 101 a 500                     ")
+print("3 - de 501 a 800                     ")
+print("4 - acima de 801                     ")
+print("_________________________________________")
+
+print("              Percentual                 ")
+print("1 - nenhum credito                       ")
+print("2 - 15% do valor gasto medio             ")
+print("3 - 25% do valor gasto medio             ")
+print("4 - 35% do valor gasto medio             ")
+print("_________________________________________")
+cliente=input("informe o nome do cliente:")
+gastomed=float(input("informe o valor gasto no  ano:"))
+
+
+Percentual=gastomed
+if Percentual >=0 and Percentual <=100:
+    print("nenhum credito")
+if Percentual >=101 and Percentual <=500:
+    total=Percentual*0.15
+    print("o ",cliente," tem 15% do gasto medio ")
+if Percentual >=501 and Percentual <=800:
+    total=Percentual*0.25
+    print("o ",cliente," tem 25% do gasto medio ")
+if Percentual >=801:
+    total=Percentual*0.35
+    print("o ",cliente," tem 35% do gasto medio ")
+
+print("o credito especial do cliente ",cliente,"é de R$",total)
